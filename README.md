@@ -1,4 +1,4 @@
-## Memetics' RLT: Random Loot Tables for Minecraft
+## Memetics' Random Loot Tables (RLT) for Minecraft
 
 This project generates datapacks for (Java) Minecraft that randomize the loot tables.
 
