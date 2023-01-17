@@ -7,7 +7,7 @@ Currently, RLT is use-at-your-own-risk; the code is not actively maintained nor 
 RLT releases currently (but not actively) supported with security updates:
 
 | Version | Supported          |
-| ------- | ------------------ |
+| ------- | :----------------: |
 | 0.15.4-beta   | :white_check_mark: |
 | releases prior to 0.15.4-beta   | :x:                |
 
