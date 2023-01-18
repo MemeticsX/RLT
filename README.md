@@ -2,74 +2,40 @@
 
 Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in different (but consistent) random drops from objects, chests, entities, and gameplay elements such as fishing.  Chaotic fun!
 
-<!--
-/discord/:553903039082135555
-/github/search/:user/:repo/:query
--->
-<p align="center"> centered text 
 
-[![Current Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT) [![Searched count](https://img.shields.io/github/search/:MemeticsX/:RLT/:random-A8CC9D.svg)]() [![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT) [![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues) [![Discord](https://img.shields.io/discord/:553903039082135555)](https://discord.gg/guTcuM5V62)
+[![Current Release Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
 
-...aaaaaand break!</p>
-  
-[![github release version](https://img.shields.io/github/v/release/nhn/tui.editor.svg?include_prereleases)](https://github.com/nhn/tui.editor/releases/latest) [![npm version](https://img.shields.io/npm/v/@toast-ui/editor.svg)](https://www.npmjs.com/package/@toast-ui/editor) [![license](https://img.shields.io/github/license/nhn/tui.editor.svg)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.editor/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) 
 
-<p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
+[![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT)
+![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)
+[![license](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
+![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/random-A8CC9D.svg)
+[![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT)
+[![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues)
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
-</p>
+🚩
+[Features](#features-) • 
+[How It Works](#how-it-works-) • 
+[Getting Started](#getting-started-) • 
+[Creating and using RLT datapacks](#creating-and-using-rlt-datapacks-) • 
+[Configuration](#configuration-) • 
+[Release History](#release-history-) • 
+[License](#license-) • 
+[Contribute](#contribute-) • 
+[Connect](#connect-) • 
+[Support RLT](#support-rlt-)
+🚩
 
 *PLACEHOLDER: A nice animated image showing RLT in action.*
 
-
 ---
 
-## Table of Contents 🚩
+## Features 🎨
 
-- [Features](#-features)
-- [How It Works](#-how-it-works)
-- [Getting Started](#-getting-started)
-- [--Preparing the loot_tables folder](#preparing-the-loot_tables-folder)
-- [--Creating and using RLT datapacks](#creating-and-using-rlt-datapacks)
-- [Configuration](#-configuration)
-- [--Config Files](#config-files)
-- [--Recommended Configuration](#recommended-configuration)
-- [Release History](#-release-history)
-- [License](#-license)
-- [Connect!](#-connect)
-- [Support RLT](#-support-rlt)
-
----
-
-
-## 📦🎨 Features
-
-* [Viewer](https://github.com/nhn/tui.editor/tree/master/docs/en/viewer.md) : Supports a mode to display only markdown data without an editing area.
-* [Internationalization (i18n)](https://github.com/nhn/tui.editor/tree/master/docs/en/i18n.md) : Supports English, Dutch, Korean, Japanese, Chinese, Spanish, German, Russian, French, Ukrainian, Turkish, Finnish, Czech, Arabic, Polish, Galician, Swedish, Italian, Norwegian, Croatian + language and you can extend.
-* [Widget](https://github.com/nhn/tui.editor/tree/master/docs/en/widget.md) : This feature allows you to configure the rules that replaces the string matching to a specific `RegExp` with the widget node.
-* [Custom Block](https://github.com/nhn/tui.editor/tree/master/docs/en/custom-block.md) : Nodes not supported by Markdown can be defined through custom block. You can display the node what you want through writing the parsing logic with custom block.
-
-Some degree of customization through the table lists in the config files.  
-
-The code here is provided as-is and is not actively supported, though the developer (Memetics / current Github username: viralmeme) intends to update the code from time to time. For discussion of the project, please visit the Mining after Dark Discord: see source code for link.
+- User-selectable random seed
+- Some customization of loot table selection and handling
+- Automatic updating of loot tables after assignment to remove impossible drop conditions and correct other drop-preventing issues
+- Ease of use: No modding required; simply add the datapack to the save game's datapacks folder
 
 
 ## How It Works 🔧
@@ -79,18 +45,15 @@ Memetics' Random Loot Tables (RLT) loads copies of the default (Java) Minecraft 
 
 ## Getting Started ▶
 
-### Prerequisites
-
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
-
-
-### Preparing the loot_tables folder
-
 <details>
 
-<summary>"Click to expand"</summary>
+<summary>click to expand</summary>
+
+### Installation
+
+To install RLT on Windows, extract the .zip file contents to a folder on your PC.  The RLT source code can be run directly using Python IDLE (free software available at https://www.python.org/), or it can be run using the RLT.exe file.  For RLT to work, however, you'll need to add the Minecraft "loot_tables" folder to the RLT folder.
+
+### Preparing the loot_tables folder
 
 Memetics' Random Loot Tables (RLT) needs to have access to a copy of the Minecraft "loot_tables" folder, with all of its files and sub-folders and their files.  RLT will not run without the loot_tables folder being added to the RLT folder.
 
@@ -106,8 +69,12 @@ If you are unsure how to locate the loot_tables folder, start by pasting this in
 
 Then in the "versions" folder, open the folder named with the current Minecraft version: for instance, the folder named 1.19.3.  (The folder will not exist until you first launch that version of the game; so if the folder does not exist, open the Minecraft launcher and start that version of the game, so the Minecraft launcher will download all of the files necessary to run that version of the game.)
 
-If you are unable to locate the Minecraft root installation folder, Minecraft may be installed in a different location on your system.  Wherever it is located, navigate to the root ".minecraft" folder where the game is installed, open the "versions" folder, and then locate the folder for the current version of the game.
-
+  <ul>
+    <ol>
+  **Note**: If you are unable to locate the Minecraft root installation folder, Minecraft may be installed in a different location on your system.  Wherever it is located, navigate to the root ".minecraft" folder where the game is installed, open the "versions" folder, and then locate the folder for the current version of the game.
+    </ol>
+  </ul>
+  
 2. In the [version] folder, open the compressed [version].jar file using a file compression utility such as 7Zip.  (For instance, in the folder 1.19.3, the file will be called 1.19.3.jar.)
 
 3. In the compressed .jar file, open the "data" folder, and then open the "minecraft" folder.
@@ -119,11 +86,11 @@ If you are unable to locate the Minecraft root installation folder, Minecraft ma
 </details>
 
 
-### Creating and using RLT datapacks
+## Creating and using RLT datapacks 📦
 
 <details>
 
-<summary>"Expand / Contract"</summary>
+<summary>click to expand</summary>
 
 When you run the RLT application, it will prompt you for a seed to use for randomizing the loot tables.  If you use the same seed and the same set of loot tables and config files, the application will generate the same (identical) datapack each time.  If you do not enter a seed, RLT will use a system-generated random seed.  Every time RLT is launched, the system-generated seed is generated at random, resulting in a different datapack each time.  (So if you want to produce the same datapack each time, manually enter the same seed each time.)
 
@@ -132,12 +99,8 @@ Once RLT generates a new datapack, it writes the datapack as a .zip file to the 
 Copy the RLT datapack .zip file to the "datapacks" folder located in the savegame folder for a new or existing Minecraft world, and the loot drops will be randomized.
 
 
-#### To add the RLT datapack to a new Minecraft world:
+### To add the RLT datapack to a new Minecraft world:
 
-<details>
-  
-<summary>"Expand / Contract"</summary>
-  
 If you want to create a new world in which the loot tables start randomized (this works in Minecraft version 1.17 and later):
 
 - On the Singleplayer* menu, click "Create New World."
@@ -149,16 +112,11 @@ If you want to create a new world in which the loot tables start randomized (thi
 - Update any other world creation settings as desired.
 - Finally, click "Create New World" to finish world creation and launch your new RLT world!
 
-* The process is simliar for Mulitplayer worlds.  However, if you are running the standalone Minecraft server, you may have to launch the server to let it create the new world for the first time (so that the world savegame folder and its "datapacks" folder will be created), stop the server, add the RLT datapack to the world's datapacks folder, and then restart the server.
+> The process is simliar for Mulitplayer worlds.  However, if you are running the standalone Minecraft server, you may have to launch the server to let it create the new world for the first time (so that the world savegame folder and its "datapacks" folder will be created), stop the server, add the RLT datapack to the world's datapacks folder, and then restart the server.
 
-</details>
-
-
-#### To add the RLT datapack to an existing Minecraft world:
-
-<details>
-<summary>"Expand / Contract"</summary>
   
+### To add the RLT datapack to an existing Minecraft world:
+
 - Exit the world (if it is currently open in Minecraft).
 - In File Explorer, navigate to the savegame folder for the world.  (By default, this folder is located in %AppData%/.minecraft/saves/.  However, you can also open the world save folder from within Minecraft: Select the world on the Singleplayer menu, click Edit, and then click "Open World Folder.")
 - In the world's savegame folder, open the datapacks folder.
@@ -167,10 +125,12 @@ If you want to create a new world in which the loot tables start randomized (thi
 
 </details>
 
-</details>
-
 
 ## Configuration 📊
+
+<details>
+
+<summary>click to expand</summary>
 
 ### Config files
 
@@ -202,10 +162,16 @@ Memetics finds it tedious to have 17 varieties of candle and another 17 varietie
 
 Feel free to experiment, though!  The config lists may be modified or even removed entirely, and RLT will still generate datapacks - and you still might get lucky with what items get dropped from where, but ultimately, you will have to be the judge of the results of such experiments.
 
+</details>
+
 
 ## Release History 📅
 
-RLT follows [semantic versioning](http://semver.org/). For the release history, see the version [tags in the RLT GitHub repository](https://github.com/MemeticsX/RLT/tags).
+RLT follows [semantic versioning](http://semver.org/). For the release history, see the version [tags in the RLT GitHub repository](https://github.com/MemeticsX/RLT/tags).  
+
+<ul>
+Note: The RLT code is provided as-is and is not actively supported, though the developer plans to update the code from time to time, as time permits.
+</ul>
 
 
 ## License 📜
@@ -213,19 +179,28 @@ RLT follows [semantic versioning](http://semver.org/). For the release history, 
 Distributed under the GNU GPL 3.0 license. See the [LICENSE](LICENSE) file for more information.
 
 
+## Contribute 💪
+
+If you are interested in contributing to the project as a developer, please contact Memetics on the [Mining after Dark Discord server](https://discord.gg/guTcuM5V62).
+
+
 ## Connect 🌏
 
-Join the discussion of RLT on [the Mining after Dark Discord server](https://discord.gg/guTcuM5V62).  You can also report issues with installing or running Memetics' RLT on [the RLT GitHub repository](https://github.com/MemeticsX/RLT).
+Join the discussion of RLT on [the Mining after Dark Discord server](https://discord.gg/guTcuM5V62).  You can also report issues with installing or running Memetics' RLT on [the RLT GitHub repository](https://github.com/MemeticsX/RLT/issues).
 
 
 ## Support RLT 🚀
 
-If you like this project, please consider showing your support (thanks!):
+If you like this project, please consider [buying Memetics a decent meal](https://www.buymeacoffee.com/Memetics):
 
-(No Patreon yet or whatever; for now, just consider dropping by the Mining after Dark Discord to say thanks.  :-)
+<a href="https://www.buymeacoffee.com/Memetics"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a decent meal&emoji=😋&slug=Memetics&button_colour=5900c6&font_colour=ffffff&font_family=Lato&outline_colour=ffffff&coffee_colour=FFDD00" height="36" width="160" /></a>
+
+Or simply drop by the Mining after Dark Discord server to say thanks:
+
+[![Discord](https://img.shields.io/discord/553903039082135555?label=Discord)](https://discord.gg/guTcuM5V62)
 
 ---
 
+I hope you enjoy using RLT and playing Minecraft with random loot tables!  :D  -Memetics
 
-📦 I hope you enjoy using RLT and playing Minecraft with random loot tables!  :D
--Memetics
+[![Twitch](https://img.shields.io/twitch/status/Memetics)](https://twitch.tv/Memetics)
