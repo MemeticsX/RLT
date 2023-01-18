@@ -1,7 +1,7 @@
-[![Current Release Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
-[![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT)
-![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/random-A8CC9D.svg)
-[![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT)
+[![Current Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
+[![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/releases)
+![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/goto-A8CC9D.svg)
+[![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues)
 [![license](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
 
@@ -38,7 +38,9 @@ Generates datapacks for (Java) Minecraft that randomize the loot tables, resulti
 
 ## How It Works 🔧
 
-Memetics' Random Loot Tables (RLT) loads copies of the default (Java) Minecraft loot tables.  Based on a user-provided or system-determined random seed, it randomly redistributes the loot tables' contents.  The randomization is modified based on the RLT configuration settings, which allows it to avoid problematic drop assignments that would prevent game progression or make progression overly difficult and frustrating.  The resulting assignments are revised to correct impossible-to-meet conditions checks that would prevent drops, such as the "killed by player" condition applied to a non-entity, and to correct certain other issues.  The resulting table set is written to a Minecraft datapack .zip file, which can be added to the datapack folder of a new or existing Minecraft world.
+Memetics' Random Loot Tables (RLT) loads copies of the default (Java) Minecraft loot tables.  Based on a user-provided or system-determined random seed, it randomly redistributes the loot tables' contents, modified based on the RLT configuration settings, which allows it to avoid problematic drop assignments that would prevent game progression or make progression overly difficult and frustrating.
+
+Then the tables are revised to correct impossible-to-meet conditions checks that would prevent drops, such as the "killed by player" condition applied to a non-mob, and to correct certain other issues.  The resulting table set is written to a Minecraft datapack .zip file, which then can be added to the datapack folder of a new or existing Minecraft world.
 
 
 ## Getting Started ▶
@@ -153,25 +155,25 @@ To prevent assignments that block game progression, such as blaze rods being ass
 
 At the very least, keep blaze.json and _either_ enderman.json or piglin_bartering.json in the bottlenecks.config list, and keep very rare or hard-to-find droppers (such as spawn_bonus_chest.json and the infested blocks) in the blockers.config list.  
 
-The default showstoppers and "not yet implemented" lists in exclusions.config should also be kept as-is.
+The default "Showstoppers" and "Not yet implemented" lists in exclusions.config should also be kept as-is.
 
-However, the killjoys list (in exclusions.config) can be modified as desired.  Additional loot tables may be added to the killjoys list if you want to reduce the frustration of having to hunt for days on end to find certain hard-to-find loot drops, or if you have certain tables that you simply want to have retain their normal drops.
+However, the "Killjoys" list (in exclusions.config) can be modified as desired.  Additional loot tables may be added to the killjoys list if you want to reduce the frustration of having to hunt for days on end to find certain hard-to-find loot drops, or if there are certain things that you simply want to have retain their normal drops.
 
 <ul>
-Memetics finds it tedious to have 17 varieties of candle and another 17 varieties of candle cake dropping candles as part of the randomized loot set, taking up 34 of the drops, and having the unbreakable cakes assigned other items' loot tables (and thus being unable to produce those drops), so those 34 tables are included on the default killjoys list.  Memetics also (currently) likes to have shulker_box.json on the list and therefore unrandomized, so that at least one type of shulker box is available as a reusable shulker box for gameplay.  But YMMV.
+Memetics finds it tedious to have 17 varieties of candle dropping as part of the randomized loot set, not to mention having candles of the same color dropping from two different sources (if candle cakes were left in), and he thinks that candle cakes are just silly to begin with, so those loot tables are included on his default Killjoys list.  Memetics also (currently) likes to have shulker_box.json on the list and therefore unrandomized, so that at least one type of shulker box is available as a reusable shulker box for gameplay.  But YMMV, so adjust the Killjoys list as you see fit.
 </ul>
 
-Feel free to experiment, though!  The config lists may be modified or even removed entirely, and RLT will still generate datapacks - and you still might get lucky with what items get dropped from where, but ultimately, you will have to be the judge of the results of such experiments.
+Feel free to experiment, though!  The config lists may be modified or even removed entirely, and RLT will still generate the datapacks - and you still might get lucky with what items get dropped from where - but ultimately, you will have to be the judge of the results of such experiments.
 
 </details>
 
 
 ## Release History 📅
 
-RLT follows [semantic versioning](http://semver.org/). For the release history, see the version [tags in the RLT GitHub repository](https://github.com/MemeticsX/RLT/tags).  
+For the release history, see the version [tags in the RLT GitHub repository](https://github.com/MemeticsX/RLT/tags).  RLT releases follow [semantic versioning](http://semver.org/). 
 
 <ul>
-Note: The RLT code is provided as-is and is not actively supported, though the developer plans to update the code from time to time, as time permits.
+Note: The RLT code is provided as-is and is not actively supported, though Memetics plans to update the code from time to time, as time permits.
 </ul>
 
 
@@ -192,15 +194,16 @@ Join the discussion of RLT on [the Mining after Dark Discord server](https://dis
 
 ## Support RLT 🚀
 
-If you like this project, please consider [buying Memetics a decent meal](https://www.buymeacoffee.com/Memetics):
+If you like this project, please consider dropping by [the Mining after Dark Discord server](https://discord.gg/guTcuM5V62) to say thanks!
+
+Or you could [buy Memetics a decent meal](https://www.buymeacoffee.com/Memetics):
 
 <a href="https://www.buymeacoffee.com/Memetics"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a decent meal&emoji=😋&slug=Memetics&button_colour=5900c6&font_colour=ffffff&font_family=Lato&outline_colour=ffffff&coffee_colour=FFDD00" height="36" width="160" /></a>
 
-Or simply drop by the Mining after Dark Discord server to say thanks:
-
-[![Discord](https://img.shields.io/discord/553903039082135555?label=Discord)](https://discord.gg/guTcuM5V62)
-
 ---
 
-I hope you enjoy using RLT and playing Minecraft with random loot tables!  :D
--Memetics  [![Twitch](https://img.shields.io/twitch/status/Memetics)](https://twitch.tv/Memetics)
+I hope you enjoy using RLT and playing Minecraft with random loot tables!  :D\
+-Memetics\
+\
+[![Twitch](https://img.shields.io/twitch/status/Memetics?label=Twitch)](https://twitch.tv/Memetics)\
+[![Discord](https://img.shields.io/discord/553903039082135555?label=Discord)](https://discord.gg/guTcuM5V62)
