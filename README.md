@@ -31,8 +31,8 @@ Generates datapacks for (Java) Minecraft that randomize the loot tables, resulti
 - Automatic updating of loot tables to correct impossible drop conditions and certain other issues
 - Some customization of loot table selection and handling
 - Forensics files generated in datapack that list loot table assignments for convenient post-game analysis
-- Easy to use: No modding required; simply add the datapack to the save game's datapacks folder
-- A brand new gameplay experience every time
+- Easy to use: No modding required; simply add the datapack to the world's datapacks folder and (re)start the world
+- A brand new gameplay experience with every new datapack
 - Google Sheets loot table tracker available to help players keep track of drop chains during game play
 
 
