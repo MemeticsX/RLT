@@ -1,46 +1,44 @@
-# Memetics' Random Loot Tables
-
-Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in different (but consistent) random drops from objects, chests, entities, and gameplay elements such as fishing.  Chaotic fun!
-
-
 [![Current Release Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
-
-
 [![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT)
-![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)
-[![license](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
 ![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/random-A8CC9D.svg)
 [![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT)
 [![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues)
+[![license](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
 
-🚩
+# Memetics' Random Loot Tables
+
+Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in randomly different (but consistent) drops from objects, chests, entities, and gameplay elements such as fishing.  Chaotic fun!
+
 [Features](#features-) • 
 [How It Works](#how-it-works-) • 
 [Getting Started](#getting-started-) • 
 [Creating and using RLT datapacks](#creating-and-using-rlt-datapacks-) • 
-[Configuration](#configuration-) • 
+[Configuration](#configuration-)\
+\
 [Release History](#release-history-) • 
 [License](#license-) • 
 [Contribute](#contribute-) • 
 [Connect](#connect-) • 
 [Support RLT](#support-rlt-)
-🚩
 
-*PLACEHOLDER: A nice animated image showing RLT in action.*
+<!-- PLACEHOLDER: Add a nice animated image showing RLT in action. -->
 
 ---
 
 ## Features 🎨
 
 - User-selectable random seed
+- Automatic updating of loot tables to correct impossible drop conditions and certain other issues
 - Some customization of loot table selection and handling
-- Automatic updating of loot tables after assignment to remove impossible drop conditions and correct other drop-preventing issues
-- Ease of use: No modding required; simply add the datapack to the save game's datapacks folder
+- Forensics files generated in datapack that list loot table assignments for convenient post-game analysis
+- Easy to use: No modding required; simply add the datapack to the save game's datapacks folder
+- A brand new gameplay experience every time
+- Google Sheets loot table tracker available to help players keep track of drop chains during game play
 
 
 ## How It Works 🔧
 
-Memetics' Random Loot Tables (RLT) loads copies of the default (Java) Minecraft loot tables.  Based on a user-provided or system-determined random seed, it randomly redistributes the loot tables' contents.  The randomization is modified based on the RLT configuration settings, which allows it to avoid problematic drop assignments that would prevent game progression or make progression overly difficult and frustrating.  The resulting assignments are revised to correct issues such as now-impossible conditions checks like the "killed by player" condition applied to a non-entity.  Then the table set is written to a new datapack .zip file, which is ready to add to a new or existing Minecraft world.
+Memetics' Random Loot Tables (RLT) loads copies of the default (Java) Minecraft loot tables.  Based on a user-provided or system-determined random seed, it randomly redistributes the loot tables' contents.  The randomization is modified based on the RLT configuration settings, which allows it to avoid problematic drop assignments that would prevent game progression or make progression overly difficult and frustrating.  The resulting assignments are revised to correct impossible-to-meet conditions checks that would prevent drops, such as the "killed by player" condition applied to a non-entity, and to correct certain other issues.  The resulting table set is written to a Minecraft datapack .zip file, which can be added to the datapack folder of a new or existing Minecraft world.
 
 
 ## Getting Started ▶
@@ -51,23 +49,23 @@ Memetics' Random Loot Tables (RLT) loads copies of the default (Java) Minecraft 
 
 ### Installation
 
-To install RLT on Windows, extract the .zip file contents to a folder on your PC.  The RLT source code can be run directly using Python IDLE (free software available at https://www.python.org/), or it can be run using the RLT.exe file.  For RLT to work, however, you'll need to add the Minecraft "loot_tables" folder to the RLT folder.
-
+To install Memetics' Random Loot Tables (RLT) on Windows, extract the .zip file contents to a folder on your PC.  RLT can be run directly from the source code using Python IDLE (available for free at https://www.python.org/) or using the RLT.exe file included with the release.  For RLT to work, however, the Minecraft "loot_tables" folder first must be added to the RLT folder.
+  
 ### Preparing the loot_tables folder
 
-Memetics' Random Loot Tables (RLT) needs to have access to a copy of the Minecraft "loot_tables" folder, with all of its files and sub-folders and their files.  RLT will not run without the loot_tables folder being added to the RLT folder.
+RLT needs to have access to a copy of the Minecraft "loot_tables" folder, with all of its files and sub-folders and their files.  RLT will not run without a copy of the loot_tables folder being added to the RLT folder.
 
-The loot_tables folder must be extracted from your current (Java) Minecraft game installation (or more specifically, from the version of the game corresponding with this version of RLT) and copied to the RLT application folder.  (For RLT 1.15.4 (beta), the RLT configuration (.config) files (2-block_objects.config, blockers.config, bottlenecks.config, and exclusions.config) also must be in the RLT folder.
-
+The loot_tables folder must be extracted from the current (Java) Minecraft game installation (or more accurately, from the version of the game corresponding with this version of RLT) and copied to the RLT application folder.
+  
 _To extract the "loot_tables" folder from your Minecraft installation_:
 
-1. In Windows File Explorer, navigate to the current Minecraft installation folder, which in Windows is normally found in %AppData%/.minecraft/versions/[version]/[version].jar/data/minecraft/loot_tables.  (For the current RLT build, the [version] folder is named "1.19.3".)
+1. In Windows File Explorer, navigate to the current Minecraft installation folder, which in Windows is normally found in %AppData%/.minecraft/versions/[version]/[version].jar/data/minecraft/loot_tables.  (For the current (0.15.4-beta) RLT build, the [version] folder is named "1.19.3".)
 
-If you are unsure how to locate the loot_tables folder, start by pasting this into the location bar in the Windows File Explorer:
+If you are unsure how to locate the loot_tables folder, start by pasting this into the location bar in Windows File Explorer:
 
 %AppData%/.minecraft/versions/
 
-Then in the "versions" folder, open the folder named with the current Minecraft version: for instance, the folder named 1.19.3.  (The folder will not exist until you first launch that version of the game; so if the folder does not exist, open the Minecraft launcher and start that version of the game, so the Minecraft launcher will download all of the files necessary to run that version of the game.)
+Then in the "versions" folder, open the folder named with the current Minecraft version: for instance, the folder named 1.19.3.  (The folder is created when you first launch that version of the game; so if the folder does not exist, open the Minecraft launcher and start that version of the game, so the Minecraft launcher will download all of the files necessary to run that version of the game.)
 
   <ul>
     <ol>
@@ -75,13 +73,13 @@ Then in the "versions" folder, open the folder named with the current Minecraft 
     </ol>
   </ul>
   
-2. In the [version] folder, open the compressed [version].jar file using a file compression utility such as 7Zip.  (For instance, in the folder 1.19.3, the file will be called 1.19.3.jar.)
+2. In the [version] folder, open the compressed [version].jar file using a file compression utility such as 7Zip.  (For instance, in the folder called 1.19.3, the file will be called 1.19.3.jar.)
 
 3. In the compressed .jar file, open the "data" folder, and then open the "minecraft" folder.
 
 4. In the "minecraft" folder, extract the "loot_tables" folder, copying it into the RLT folder.
 
-5. Once the loot_tables folder and its contents have been extracted into the RLT folder, the RLT application should now be able to run.
+5. Once the loot_tables folder and its contents have been extracted into the RLT folder, the RLT application should be able to run.
 
 </details>
 
@@ -92,7 +90,9 @@ Then in the "versions" folder, open the folder named with the current Minecraft 
 
 <summary>click to expand</summary>
 
-When you run the RLT application, it will prompt you for a seed to use for randomizing the loot tables.  If you use the same seed and the same set of loot tables and config files, the application will generate the same (identical) datapack each time.  If you do not enter a seed, RLT will use a system-generated random seed.  Every time RLT is launched, the system-generated seed is generated at random, resulting in a different datapack each time.  (So if you want to produce the same datapack each time, manually enter the same seed each time.)
+### Generating an RLT datapack:
+
+When you run the RLT application, it will prompt you for a seed to use for randomizing the loot tables.  If you use the same seed and the same set of loot tables and config files, the application will generate the same (identical) datapack each time.  If you do not enter a seed, RLT will use a system-generated random seed.  Every time RLT is launched, the system-generated seed is determined at random, resulting in a different datapack each time.  (So if you want to produce the same datapack each time, manually enter the same seed each time.)
 
 Once RLT generates a new datapack, it writes the datapack as a .zip file to the "RLT datapacks" folder in the RLT folder.  If you provided a seed, the file name will include the seed.
 
@@ -106,7 +106,7 @@ If you want to create a new world in which the loot tables start randomized (thi
 - On the Singleplayer* menu, click "Create New World."
 - In the "Create New World" form, click "Data Packs."
 - In the "Select Data Packs" form, click "Open Pack Folder."  The datapacks folder for the new world will open in a new File Explorer window.  (The files for the new world are located in a temporary folder until world creation is finalized.)
-- Copy the newly generated RLT datapack from the "RLT datapacks" folder into the new world's "datapacks" folder.  (Once the file is added to the folder, the File Explorer window showing the new world's "datapacks" folder may be closed.)
+- Copy the newly generated RLT datapack from the "RLT datapacks" folder into the new world's "datapacks" folder.  (Once the file is added to the folder, you can close the File Explorer window showing the new world's "datapacks" folder.)
 - Switch back to Minecraft: The datapack should now appear in the "Available" list.
 - Click the RLT datapack icon to move the datapack to the "Selected" list, and then click "Done."
 - Update any other world creation settings as desired.
@@ -117,11 +117,11 @@ If you want to create a new world in which the loot tables start randomized (thi
   
 ### To add the RLT datapack to an existing Minecraft world:
 
-- Exit the world (if it is currently open in Minecraft).
-- In File Explorer, navigate to the savegame folder for the world.  (By default, this folder is located in %AppData%/.minecraft/saves/.  However, you can also open the world save folder from within Minecraft: Select the world on the Singleplayer menu, click Edit, and then click "Open World Folder.")
-- In the world's savegame folder, open the datapacks folder.
+- If the world is currently open in Minecraft, exit the world (or stop the server).
+- In File Explorer, navigate to the savegame folder for the world.  (By default, this folder is located in %AppData%/.minecraft/saves/.  However, you can also open the world save folder from within Minecraft: On the Singleplayer menu, select the world, click Edit, and then click "Open World Folder.")
+- In the world's savegame folder (which should be named the same as the world name), open the datapacks folder.
 - Copy the RLT datapack .zip file into the datapacks folder.
-- Resume playing the world.  The loot drops should now be randomzied.
+- Resume playing the world.  The loot drops will now be randomzied.
 
 </details>
 
@@ -136,14 +136,15 @@ If you want to create a new world in which the loot tables start randomized (thi
 
 The lists in the configuration files are used primarily to prevent loot table assignments that block game progress, such as assigning blaze rods to drop from an End chest when blaze rods are needed to gain access to the End in the first place. The config lists also allow the exclusion of certain loot tables from random assignments, such as table assignments that would make the game too frustrating to play. For instance, if blaze rods only dropped from certain infested blocks, it might take a frustratingly long time of random digging before locating those blocks in the hope that blaze rods could be obtained from them.
 
-**The [bottlenecks.config](bottlenecks.config) file** holds the list of loot tables for loot that is needed for progression.  By default, it contains blaze.json and enderman.json, since ender pearls and blaze powder are needed to help locate strongholds and activate the End portals to allow passage to the End.  Technically, ender pearls can also be found from Piglin bartering (as of Minecraft 1.16), so ender pearls could still be found even if Enderman drops are not available, but if both of those bottlenecks get assigned to drop from objects or entities exclusive to the End, progress will still be impossible.  (For a more cautious configuration, piglin_bartering.json could also be added to the bottlenecks.config list.)
+**The [bottlenecks.config](bottlenecks.config) file** holds the list of loot tables for loot that is needed for progression.  By default, it contains blaze.json and enderman.json, since ender pearls and blaze powder are needed to help locate strongholds and activate the End portals to allow passage to the End.  Technically, Ender pearls also can be obtained through Piglin bartering (as of Minecraft 1.16), so Ender pearls most likely could still be found even if Enderman drops are not available, but if both of those bottlenecks get assigned to drop from objects or entities exclusive to the End, game progression to the End still will be highly unlikely if not impossible.  (For a more cautious configuration, piglin_bartering.json could also be added to the bottlenecks.config list.)
 
-**The [blockers.config](blockers.config) file** holds the list of loot tables that RLT will avoid assigning the drops from tables listed in bottlenecks.config.  This way, the important bottlenecks drops will not be overly difficult if not impossible to find.  Probably nobody wants to dig around all over the world at random to try to locate an infested diorite vein in the hope that maybe it will drop an ender pearl or two, and no one wants the starting bonus chest to be the only place where one can find a blaze rod.  We might still want those items' drops to be assigned elsewhere, but we don't want those to be the only droppers of important resources.  So the blockers tables are withheld from the assignment pool until the bottlenecks tables have been assigned to non-blockers from the general (non-blocker, non-excluded) unassigned tables list; then the blockers are added to the general assignment list for random assignment with the rest of the pool.
+**The [blockers.config](blockers.config) file** holds the list of loot tables to which RLT will avoid assigning the drops from tables listed in bottlenecks.config.  This way, the important bottlenecks drops will not be overly difficult if not impossible to find.  Probably nobody wants to dig around all over the world at random to try to locate an infested diorite vein in the hope that maybe it will drop an Ender pearl or two, and no one wants the starting bonus chest to be the only place where one can find a blaze rod.  We might still want the blocker tables' drops to be assigned elsewhere, but we don't want those to be the only droppers of important resources.  So the blockers tables are withheld from the assignment pool until the bottlenecks tables have been assigned to non-blockers from the general (non-blocker, non-excluded) unassigned tables list; then the blockers are added to the general assignment list for random assignment with the rest of the pool.
 
 **The [exclusions.config](exclusions.config) file** holds the list of loot tables that will not be altered; the tables in this list will remain unrandomized.  This list contains:
 
-- showstoppers: things that won't drop anything, potentially preventing important resources from dropping, since they're not implemented (in the case of certain entities like Giant and Zombie Horse as well as tables for future objects and entities that have not yet been implemented (and therefore are empty currently); and
-- killjoys (a.k.a. frustrators): tables which, if included in the randomized loot (either as droppers or to have their loot dropped by something else), would make the game significantly less fun.  The items on this list are less problematic for game progression and are more a matter of taste.
+- Showstoppers: Things that won't drop anything, preventing potentially important resources from dropping, either because they're not implemented in the game (as with certain entities like Giant and Zombie Horse) or because the Minecraft code prevents them programmatically from producing drops;
+- Not yet implemented: Tables for objects and entities that are planned for a future release of Minecraft but that have not been implemented in the current release of the game (and therefore will never drop any loot assigned to be dropped from them); and
+- Killjoys (a.k.a. frustrators): Tables which, if included in the randomized loot (either as droppers or to have their loot dropped by something else), would make the game significantly less fun.  The items on this list are less problematic for game progression and are more a matter of taste.
 
 
 ### Recommended Configuration
@@ -181,7 +182,7 @@ Distributed under the GNU GPL 3.0 license. See the [LICENSE](LICENSE) file for m
 
 ## Contribute 💪
 
-If you are interested in contributing to the project as a developer, please contact Memetics on the [Mining after Dark Discord server](https://discord.gg/guTcuM5V62).
+RLT is developed in [![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)](https://www.python.org).  If you are a developer interested in contributing to the project, please contact Memetics on the [Mining after Dark Discord server](https://discord.gg/guTcuM5V62).
 
 
 ## Connect 🌏
@@ -201,6 +202,5 @@ Or simply drop by the Mining after Dark Discord server to say thanks:
 
 ---
 
-I hope you enjoy using RLT and playing Minecraft with random loot tables!  :D  -Memetics
-
-[![Twitch](https://img.shields.io/twitch/status/Memetics)](https://twitch.tv/Memetics)
+I hope you enjoy using RLT and playing Minecraft with random loot tables!  :D
+-Memetics  [![Twitch](https://img.shields.io/twitch/status/Memetics)](https://twitch.tv/Memetics)
