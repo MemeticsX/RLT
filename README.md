@@ -1,4 +1,5 @@
 [![Current Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
+Latest Minecraft version supported: 1.19.3
 [![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/releases)
 ![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/goto-A8CC9D.svg)
 [![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT/releases)
@@ -7,7 +8,7 @@
 
 # Memetics' Random Loot Tables
 
-Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in randomly different (but consistent) drops from objects, chests, entities, and gameplay elements such as fishing.  Chaotic fun!
+Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in randomly different (but consistent) drops from objects, chests, entities, and gameplay elements such as fishing.  Every new datapack is a different challenge.  Chaotic fun!
 
 [Features](#features-) • 
 [How It Works](#how-it-works-) • 
