@@ -8,7 +8,7 @@ Latest Minecraft version supported: 1.19.3
 
 # Memetics' Random Loot Tables
 
-Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in randomly different (but consistent) drops from objects, chests, entities, and gameplay elements such as fishing.  Every new datapack is a different challenge.  Chaotic fun!
+Generates datapacks for (Java) Minecraft that randomize the loot tables, resulting in randomly different (but consistent) drops from blocks, chests, entities, and gameplay elements such as fishing.  Every new datapack is a different challenge.  Chaotic fun!
 
 [Features](#features-) • 
 [How It Works](#how-it-works-) • 
