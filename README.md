@@ -1,11 +1,10 @@
-[![Current Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
-[![Supported Minecraft Version](https://img.shields.io/badge/Suported%20Minecraft%20(Java)%20version-1.14%20--%201.19.3-blue)](mttps://minecraft.url)
-[![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/releases)
-![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/goto-A8CC9D.svg)
-[![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT/releases)
+[![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT?color=blueviolet)](https://github.com/MemeticsX/RLT/releases)
+[![Supported Minecraft Versions](https://img.shields.io/badge/(Java)%20Minecraft-1.19%20--%201.19.3-%23295ec2)](https://www.minecraft.net)
+[![Searched Count](https://img.shields.io/github/search/MemeticsX/RLT/search?label=searched)](https://github.com/MemeticsX/RLT)
+[![Downloads Total](https://img.shields.io/github/downloads/MemeticsX/RLT/total?color=darkgreen)](https://github.com/MemeticsX/RLT/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues)
-[![license](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
-[![Python version](https://img.shields.io//pypi/pyversions/packageName-3.11.svg)]
+[![License](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/badge/Python-3.11-3e729d.svg)](https://www.python.org)
 
 # Memetics' Random Loot Tables
 
@@ -198,7 +197,7 @@ Join the discussion of RLT on [the Mining after Dark Discord server](https://dis
 
 If you like this project, please consider dropping by [the Mining after Dark Discord server](https://discord.gg/guTcuM5V62) to say thanks!
 
-Or you could [buy Memetics a decent meal](https://www.buymeacoffee.com/Memetics):
+Or you could [buy Memetics a decent meal](https://www.buymeacoffee.com/Memetics) (or a coffee):
 
 <a href="https://www.buymeacoffee.com/Memetics"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a decent meal&emoji=😋&slug=Memetics&button_colour=5900c6&font_colour=ffffff&font_family=Lato&outline_colour=ffffff&coffee_colour=FFDD00" height="36" width="160" /></a>
 
