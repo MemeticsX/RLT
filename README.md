@@ -4,7 +4,7 @@
 [![Downloads Total](https://img.shields.io/github/downloads/MemeticsX/RLT/total?color=darkgreen)](https://github.com/MemeticsX/RLT/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues)
 [![License](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
-[![Python Version](https://img.shields.io/badge/Python-3.11-3e729d.svg)](https://www.python.org)
+[![Python Version](https://img.shields.io/badge/Python-3.11-3e729d.svg?logo=python&logoColor=ffdd54)](https://www.python.org)
 
 # Memetics' Random Loot Tables
 
@@ -185,7 +185,7 @@ Distributed under the GNU GPL 3.0 license. See the [LICENSE](LICENSE) file for m
 
 ## Contribute 💪
 
-RLT is developed in [![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)](https://www.python.org).  If you are a developer interested in contributing to the project, please contact Memetics on the [Mining after Dark Discord server](https://discord.gg/guTcuM5V62).
+If you are a developer interested in contributing to the project, please contact Memetics on the [Mining after Dark Discord server](https://discord.gg/guTcuM5V62).
 
 
 ## Connect 🌏
