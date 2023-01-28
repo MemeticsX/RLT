@@ -1,10 +1,11 @@
 [![Current Version](https://img.shields.io/badge/version-0.15.4.beta-blueviolet.svg)](https://github.com/MemeticsX/RLT)
-Latest Minecraft version supported: 1.19.3
+[![Supported Minecraft Version](https://img.shields.io/badge/Suported%20Minecraft%20(Java)%20version-1.14%20--%201.19.3-blue)](mttps://minecraft.url)
 [![Latest Release](https://img.shields.io/github/v/release/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/releases)
 ![Searched count](https://img.shields.io/github/search/MemeticsX/RLT/goto-A8CC9D.svg)
 [![Total Downloads](https://img.shields.io/github/downloads/MemeticsX/RLT/total)](https://github.com/MemeticsX/RLT/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/MemeticsX/RLT.svg)](https://github.com/MemeticsX/RLT/issues)
 [![license](https://img.shields.io/github/license/MemeticsX/RLT)](https://github.com/MemeticsX/RLT/blob/main/LICENSE)
+[![Python version](https://img.shields.io//pypi/pyversions/packageName-3.11.svg)]
 
 # Memetics' Random Loot Tables
 
